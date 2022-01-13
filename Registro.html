@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link  href="Stiles/stiles.css" rel="stylesheet"> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <h1>Registro</h1>
+      <form action="_blank" method="post" autocomplete="off" >
+        <div class="data">
+          <input type="text" id="nombre" name="nombre" placeholder="Nombres" />
+        </div>
+        <div class="data">
+          <input type="text" id="nombre" name="nombre"placeholder="Apellidos" />
+        </div>
+        <div class="data">
+          <input type="text" id="nombre" name="nombre" placeholder="Correo electronico" />
+          <br>
+          <br>
+        </div>
+        <div class="data">
+          <label for="datetime">Fecha de nacimiento</label>
+          <input type="datetime" id="datetime" name="datetime" 
+          value="DD-MM-AAAA" min="01-01-1930" max="31-12-2017"/>
+          <br><br>
+        </div>
+        <div class="data">
+          <label for="gender">Genero</label>
+          <input type="radio" id="famale" name="gender" value="famale"/>
+          <label for="famale">Femenino</label> 
+          <input type="radio" id="male" name="gender" value="male"/>
+          <label for="gender">Masculino</label>
+          <input type="radio" id="NP" name="gender" value="np"/>
+          <label for="gender">No especificar</label>
+          <br><br>
+        <div class="data">
+          <input type="checkbox" id="conditions" name="conditions">
+          <label for="conditions">Aceptas los <a href="#">terminos y condiciones</a></label>
+          <br>
+        </div>
+        </div class="button">
+        <input type="submit" id="submit" name= "submit" />
+        <div>
+          <p>¿Ya tienes cuenta?<a href="login.html">Has click aqui para iniciar sesion</a></p>
+      </div>
+      </form>
+    </div>
+    <?php 
+    include("registro.php");
+    ?>
+  </body>
+</html>

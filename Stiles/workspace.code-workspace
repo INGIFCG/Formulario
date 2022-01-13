@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\..\\xampp\\www\\CursoDeProgramacionUdemy"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "proyectosProgramacion"
+	}
+}

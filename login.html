@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="Stiles/stiles.css" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="conteiner">
+        <h1>Login</h1>
+      <form action="_blank" method="post" autocomplete="off">
+        <div class="data">
+          <input type="email" id="nombre" name="nombre" required="true" placeholder="Correo electronico"/><br>
+        </div>
+        <div class="data">
+          <input type="password" id="password" name="password" required="true" placeholder="Contraseña"/><br>
+        </div>
+        <div class="data"><br>
+          <input type="submit" id="submit" name="submit" />
+        </div>
+        <div>
+            <p>¿No te has registrado?<a href="Registro.html">Has click aqui para hacerlo!!</a></p>
+        </div>
+      </form>   
+    </div>
+    <?php 
+    include("registro.php");
+    ?>
+  </body>
+</html>
