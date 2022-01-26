@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link  href="Stiles/stiles.css" rel="stylesheet"> -->
+    <link  href="Stiles/stiles.css" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
     <div class="conteiner">
       <h1>Registro</h1>
-      <form action="PHP/conexion.php" method="post" autocomplete="off" >
+      <form method="post" action="conexion.php" autocomplete="off" >
         <div class="data">
-          <input type="text" id="nombre" name="nombre" placeholder="Nombres" />
+          <input type="text" id="name" name="name" placeholder="Nombres" />
         </div>
         <div class="data">
-          <input type="text" id="apellido" name="apellido"placeholder="Apellidos" />
+          <input type="text" id="last_name" name="last_name"placeholder="Apellidos" />
         </div>
         <div class="data">
           <input type="password" id="password" name="password"placeholder="contraseña" />
@@ -26,8 +26,8 @@
           <br>
         </div>
         <div class="data">
-          <label for="datetime">Fecha de nacimiento</label>
-          <input type="datetime" id="datetime" name="datetime" 
+          <label for="date">Fecha de nacimiento</label>
+          <input type="date" id="date" name="date" 
           value="DD-MM-AAAA" min="01-01-1930" max="31-12-2017"/>
           <br><br>
         </div>
@@ -41,7 +41,7 @@
           <label for="gender">No especificar</label>
           <br><br>
         <div class="data">
-          <input type="checkbox" id="conditions" name="conditions">
+          <input type="checkbox" id="conditions" name="conditions" value= "true" >
           <label for="conditions">Aceptas los <a href="#">terminos y condiciones</a></label>
           <br>
         </div>
