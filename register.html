@@ -10,12 +10,15 @@
   <body>
     <div class="conteiner">
       <h1>Registro</h1>
-      <form method="post" action="conexion.php" autocomplete="off" >
+      <form method="POST" action="PHP/conexion.php" autocomplete="off" >
         <div class="data">
           <input type="text" id="name" name="name" placeholder="Nombres" />
         </div>
         <div class="data">
           <input type="text" id="last_name" name="last_name"placeholder="Apellidos" />
+        </div>
+       <div class="data">
+          <input type="text" id="username" name="username"placeholder="Nombre de usuario" />
         </div>
         <div class="data">
           <input type="password" id="password" name="password"placeholder="contraseña" />
@@ -35,7 +38,7 @@
           <label for="gender">Genero</label>
           <input type="radio" id="famale" name="gender" value="famale"/>
           <label for="famale">Femenino</label> 
-          <input type="radio" id="male" name="gender" value="male"/>
+          <input type="radio" id="male" name="gender" value="male" default="np"/>
           <label for="gender">Masculino</label>
           <input type="radio" id="NP" name="gender" value="np"/>
           <label for="gender">No especificar</label>
@@ -47,9 +50,9 @@
         </div>
         </div class="button">
         <input type="submit" id="submit" name= "submit" />
-        <div>
+        <div class="login_link">
           <p>¿Ya tienes cuenta?<a href="login.html">Has click aqui para iniciar sesion</a></p>
-      </div>
+        </div>
       </form>
     </div>
   </body>

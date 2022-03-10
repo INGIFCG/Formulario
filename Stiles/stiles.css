@@ -7,21 +7,19 @@ a{
    text-decoration: none;
 }
 a:hover{
-    color: rgb(230, 26, 162)
+    color: #219ebc;
 }
 body{
     padding:0;
     margin:0;
     text-decoration: none;
-    background: linear-gradient(rgb(240, 6, 240), rgb(98, 7, 134), rgb(154, 37, 201)) ;
+    background: linear-gradient(#8ecae6, #219ebc,#023047 ) ;
 }
 .conteiner{
     text-align: center;
-    width: 600px;
-    height: auto;
-    padding: 11px 73px 112px 72px;
-    margin: 100px auto;
+    margin: 50px 250px ;
     border-radius: 56px;
+    padding: 10px ;
     background-color: rgba(15, 15, 15, 0.74);
     color: white;
     
@@ -38,16 +36,27 @@ body{
 }
 #submit{
     padding: 15px 30px;
-    margin: 20px;
-    border: solid 2px purple;
+    margin: 20px 50px 5px ;
+    border: solid 4px #023047;
     border-radius:20px
 }
 .data input:hover{
     background-color:white;
 }
 
-#submit:hover{
-    background-color:rgba(255, 40, 165, 0.795);
+.submit:hover{
+    background-color:#219ebc;
     color: white;
 }
 
+.error{
+    background-color: red;
+    font-size:10px;
+    padding:10px;
+
+}
+.correcto{
+    background-color: green;
+    font-size:10px;
+    padding:10px;
+}
